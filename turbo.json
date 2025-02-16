@@ -1,0 +1,13 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "dependsOn": ["bootstrap#build", "welcome#build", "music#build"],
+      "persistent": true,
+      "cache": false
+    }
+  }
+}
