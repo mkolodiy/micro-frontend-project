@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/mfe/music/">
+    <BrowserRouter basename="/play">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="*" element={<h1>Not found</h1>} />
